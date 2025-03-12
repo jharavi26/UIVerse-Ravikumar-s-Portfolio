@@ -1,0 +1,104 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+.navbar {
+  margin-top: 5px;
+  max-width: 800px;
+  width: 100%;
+  background-color: rgb(45, 37, 37);
+  padding: 1rem 2rem;
+  transform: translateX(50%);
+  border-radius: 50px;
+}
+
+.container {
+  display: flex;
+  align-items: center; /* Ensure vertical alignment */
+  justify-content: space-between; /* Space between logo, links, and button */
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+.text {
+  color: white;
+  font-size: 1.5rem; /* text-2xl → 24px (1.5rem) */
+  display: none; /* Hidden by default for small screens */
+}
+
+@media (min-width: 768px) { /* md breakpoint (Tailwind's md is 768px) */
+  .text {
+    display: block;
+  }
+}
+
+
+/* NavbarLinks container */
+.navbar-links {
+  display: flex;
+  gap: 1.5rem; /* gap-6 */
+  text-align: center;
+  font-family: var(--font-body); /* Assuming font-body is defined in global styles */
+  color: white;
+  padding: 1rem 0; /* py-4 */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Large screen styles (lg) */
+@media (min-width: 1024px) {
+  .navbar-links {
+    flex-direction: row; /* lg:flex-row */
+    position: relative; /* lg:relative */
+    font-size: 1rem; /* lg:text-md */ /* lg:bg-black */
+  }
+}
+
+/* Small screen styles (sm) */
+@media (max-width: 1023px) {
+  .navbar-links {
+    flex-direction: column; /* sm:flex-col */
+    position: absolute; /* sm:absolute */
+    top: 120%; /* sm:top-[120%] */
+    font-size: 1.25rem; /* sm:text-xl */
+    width: 100%; /* sm:w-full */
+    background-color: rgba(0, 255, 255, 0.3); /* sm:bg-cyan/30 */
+    backdrop-filter: blur(10px); /* backdrop-blur-lg */
+  }
+}
+
+/* Navbar links */
+.navbar-links li {
+  position: relative;
+  cursor: pointer;
+}
+
+/* Link styling */
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s ease-in-out;
+}
+
+.navbar-links a:hover {
+  color: cyan; /* hover:text-cyan */
+}
+
+/* Underline hover effect */
+.navbar-links li::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background-color: cyan;
+  transition: width 0.5s ease-in-out;
+}
+
+.navbar-links li:hover::after {
+  width: 100%;
+}
