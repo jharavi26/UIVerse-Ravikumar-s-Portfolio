@@ -1,10 +1,11 @@
 import React from 'react';
-import "./Navbar/Style.css";
 
 function NavbarLogo() {
   return (
     <div>
-      <h1 className='text'>Ravikumar Jha</h1>
+       <h1 className="text-white text-2xl sm:hidden md:block">
+        Ravikumar Jha
+       </h1>
       
     </div>
   )

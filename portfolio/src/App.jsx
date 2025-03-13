@@ -1,12 +1,12 @@
-import React from 'react';
-import "./App.css";
-import NavbarMain from './components/Navbar/NavbarMain';
+import React from 'react'
+import NavbarMain from './components/Navbar/NavbarMain'
 
 function App() {
   return (
-   <main>
-    <NavbarMain/>
-   </main>
+    <main className="font-body text-white relative overflow-hidden">
+      <NavbarMain/>
+      </main>
+   
   )
 }
 
