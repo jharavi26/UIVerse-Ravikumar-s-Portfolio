@@ -1,6 +1,5 @@
 import React from 'react';
 import "./Card.css"
-import stack from "../../assets/stack.png";
 
 function Card({title , image}) {
   return (

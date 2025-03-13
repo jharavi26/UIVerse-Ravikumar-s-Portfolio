@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+import "./Projects.css";
 
 function Projects() {
   return (
-    <div>
-      Projects
+    <div id = "projects">
+      <h1></h1>
+  
       
     </div>
   )

@@ -1,9 +1,10 @@
 import React from 'react';
 import "./About.css";
 import Card from '../Card/Card';
-import stack from "../../assets/stack.png";
+import stack from "../../assets/stack.jpg"
 import soft from "../../assets/soft.jpg";
-import skill from "../../assets/skill.jpg";
+import skill from "../../assets/skill.jpg"
+
 
 function About() {
   return (
@@ -50,8 +51,8 @@ function About() {
       </div>
 
       <div className='right'>
-        <Card title = "FrontEnd Stack" image = {stack} />
-        <Card title = "Developer Skiils" image = {skill}/>
+        <Card title = "Tech Stack" image = {stack} />
+        <Card title = "Skiils" image = {skill}/>
         <Card title= "Soft-Skills" image = {soft}/>
 
       </div>
