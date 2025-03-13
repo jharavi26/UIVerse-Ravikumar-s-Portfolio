@@ -1,0 +1,63 @@
+.navbar{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+}
+
+h1{
+  font-size: 30px;
+  font-weight: 700;
+  background: linear-gradient(to right , rgb(69, 69, 176), rgb(216, 110, 110) );
+  background-clip: text;
+  color: transparent;
+}
+
+.active{
+  color: aqua;
+  border-bottom: 2px solid black;
+}
+
+.navbar ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.navbar li:hover{
+  color: aqua;
+  border-bottom: 2px solid black;
+}
+
+.hamburger{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  display: none;
+}
+
+.ham{
+  width: 40px;
+  height: 2px;
+  background-color: rgb(59, 192, 11);
+}
+
+@media (max-width:768px) {
+  .hamburger{
+    display: flex;
+  }
+  
+}
+
+
