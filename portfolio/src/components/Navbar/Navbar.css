@@ -10,7 +10,7 @@
   z-index: 20;
 }
 
-h1{
+.navbar h1{
   font-size: 30px;
   font-weight: 700;
   background: linear-gradient(to right , rgb(69, 69, 176), rgb(216, 110, 110) );

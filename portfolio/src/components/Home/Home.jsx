@@ -1,7 +1,6 @@
 import React from 'react';
 import "./Home.css";
 import profile from "../../assets/profile.jpg";
-import TypingEffect from "react-typing-effect"
 
 
 
