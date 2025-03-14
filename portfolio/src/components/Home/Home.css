@@ -11,6 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 50px;
 }
 
 .right{
@@ -84,6 +85,17 @@
     height: 50vh;
   }
   
+}
+
+.des{
+  font-size: 18px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.typing-effect{
+  margin : 20px;
+  font-size: 24px;
 }
 
 
