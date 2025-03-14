@@ -91,11 +91,18 @@
   font-size: 18px;
   margin-left: 20px;
   margin-top: 10px;
+  background: linear-gradient(to right ,blue ,  rgb(180, 12, 82) );
+  background-clip: text;
+  color: transparent;
+
 }
 
 .typing-effect{
   margin : 20px;
   font-size: 24px;
+  background: linear-gradient(to right ,blue ,  rgb(198, 21, 21) );
+  background-clip: text;
+  color: transparent;
 }
 
 

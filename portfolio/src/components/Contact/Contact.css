@@ -1,0 +1,17 @@
+#contact{
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.leftside{
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  
+}
+
+.rightside{
+  width: 50%;
+  height: 100vh;
+}

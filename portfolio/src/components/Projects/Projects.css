@@ -1,0 +1,29 @@
+#projects{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.tagline{
+  font-size: 4vmax;
+  background: linear-gradient(to right  , rgb(8, 211, 188) ,  rgb(15, 82, 215));
+  background-clip: text;
+  color: transparent;
+}
+
+.slidder{
+  width: 90%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  gap: 30px;
+  scrollbar-width: none;
+}
+
+
+

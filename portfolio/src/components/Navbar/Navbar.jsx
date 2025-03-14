@@ -9,7 +9,7 @@ function Navbar() {
       <ul className='desktop'>
         <Link to = "home" spy = {true} activeClass='active' smooth={true} duration={500}><li >Home</li></Link>
         <Link to = "about" spy = {true} activeClass='active' smooth={true} duration={500} ><li>About</li></Link>
-        <Link to = "project" spy = {true} activeClass='active' smooth={true} duration={500} ><li>Projects</li></Link>
+        <Link to = "projects" spy = {true} activeClass='active' smooth={true} duration={500} ><li>Projects</li></Link>
         <Link to = "contact" spy = {true} activeClass='active' smooth={true} duration={500} ><li>Contact</li></Link>
       </ul>
 
