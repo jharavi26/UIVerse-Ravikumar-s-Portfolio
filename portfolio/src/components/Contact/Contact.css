@@ -89,3 +89,18 @@ form input{
   background-color: transparent;
   color: blue
 }
+
+@media (max-width : 750px) {
+  #contact {
+    flex-direction: column;
+  }
+
+  .leftside{
+    width: 100%; 
+  }
+
+  .rightside{
+    width: 100%;
+  }
+
+}

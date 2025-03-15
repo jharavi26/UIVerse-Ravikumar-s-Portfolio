@@ -2,8 +2,32 @@ import { useEffect, useRef } from "react";
 import "./Home.css";
 import profile from "../../assets/profile.jpg";
 import { Typewriter } from "react-simple-typewriter";
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+
 
 function Home() {
+
+  useGSAP(()=>{
+    let t1 = gsap.timeline();
+    t1.from(".line1" , {
+      y : 80,
+      duration : 1,
+      opacity : 0
+    })
+    t1.from(".line2",{
+      y : 80,
+      duration : 1,
+      opacity : 0,
+    })
+    gsap.from(".right img",{
+      x : 200,
+      duration : 1,
+      opacity : 0,
+    })
+  })
+
+  
   return (
     <div id="home">
       <div className="left">
