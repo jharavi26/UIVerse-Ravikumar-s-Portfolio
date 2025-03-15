@@ -42,9 +42,9 @@
 
 .details button:hover{
   cursor: pointer;
-  background-color: transparent;
-  color: blue;
+  color: green;
   transition: all 0.2s;
+  background: none;
 }
 
 .line1{
@@ -92,7 +92,7 @@
   font-size: 18px;
   margin-left: 20px;
   margin-top: 10px;
-  background: linear-gradient(to right ,blue ,  rgb(180, 12, 82) );
+  background: linear-gradient(to right , rgb(69, 69, 176), rgb(216, 110, 110) );
   background-clip: text;
   color: transparent;
 

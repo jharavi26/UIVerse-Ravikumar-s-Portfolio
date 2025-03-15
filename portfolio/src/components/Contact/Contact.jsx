@@ -1,8 +1,12 @@
 import React from 'react';
 import "./Contact.css";
-import contact from "../../assets/Contact.png"
+import contact from "../../assets/Contact.png";
+
 
 function Contact() {
+
+
+
   return (
     <>
     <h1 className='header'>Get in Touch </h1>
@@ -14,7 +18,7 @@ function Contact() {
       </div>
 
       <div className='rightside'>
-        <form action = "#" className='form'>
+        <form action = "https://formspree.io/f/mrbpbebr" method='POST' className='form'>
        
           <input type='text' name = "UserName" placeholder='Name'/>
           <input type = "email" name = "Email" placeholder = "Email"/>
