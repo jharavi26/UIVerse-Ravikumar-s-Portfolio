@@ -25,12 +25,14 @@ function Contact() {
           <textarea name = "message" id = "textarea" placeholder='Enter Your Message'/>
           <button type='submit' id = "btn">Submit</button>
 
-          
-
         </form>
         
         </div>
       
+    </div>
+    <div className='footer'>
+      <a href = "https://github.com/jharavi26" target="_blank" rel="noopener noreferrer">Github Link</a>
+      <a href = "https://www.linkedin.com/in/ravikumar-jha" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </div>
     </>
   )
