@@ -28,12 +28,14 @@ function Contact() {
         </form>
         
         </div>
-      
+     
     </div>
     <div className='footer'>
-      <a href = "https://github.com/jharavi26" target="_blank" rel="noopener noreferrer">Github Link</a>
+          <p>Connect with me :-</p>
+      <a href = "https://github.com/jharavi26" target="_blank" rel="noopener noreferrer">Github</a>
       <a href = "https://www.linkedin.com/in/ravikumar-jha" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </div>
+   
     </>
   )
 }
