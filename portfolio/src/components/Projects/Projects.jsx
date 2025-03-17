@@ -4,12 +4,34 @@ import Card from '../Card/Card';
 import portfolio from "../../assets/portfolio.png";
 import todo from "../../assets/todo.png";
 import purebuy from "../../assets/purebuy.png";
-import resume from "../../assets/resume.png"
+import resume from "../../assets/resume.png";
+import { useGSAP } from '@gsap/react'; 
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/all';
+gsap.registerPlugin(ScrollTrigger);
 
 
 
 
 function Projects() {
+  useGSAP(()=>{
+    gsap.from(".tagline", {
+      y:100,
+      duration:1,
+      opacity : 0,
+      stagger : 1,
+      scrollTrigger : {
+        trigger : ".tagline",
+        scroll : "body",
+        scrub : 2,
+        start : "top 80%",
+        end : "30%",
+
+      }
+    })
+  })
+
+
   return (
     <div id = "projects">
       <h1 className='tagline'>Projects</h1>
