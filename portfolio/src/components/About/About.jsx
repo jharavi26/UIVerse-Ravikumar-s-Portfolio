@@ -2,7 +2,7 @@ import React from 'react';
 import "./About.css";
 import Card from '../Card/Card';
 import stack from "../../assets/stack.jpg"
-import soft from "../../assets/soft.jpg";
+import soft from "../../assets/Soft.jpg";
 import skill from "../../assets/skill.jpg"
 
 
