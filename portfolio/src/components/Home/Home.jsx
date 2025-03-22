@@ -62,7 +62,7 @@ function Home() {
             />
           </div>
 
-          <button>Hire me</button>
+          
         </div>
       </div>
 
