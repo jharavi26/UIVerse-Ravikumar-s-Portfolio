@@ -72,6 +72,9 @@
   .hamburger{
     display: flex;
   }
+  .navbar ul{
+    display: none;
+  }
   
 }
 
