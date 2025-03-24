@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import "./Navbar.css";
 import {Link} from "react-scroll";
 import { useGSAP } from '@gsap/react';
@@ -6,6 +6,13 @@ import gsap from 'gsap';
 
 function Navbar() {
   const [darkMode, setDarkMode] = useState(false);
+ 
+  const [menuOpen, setMenuOpen] = useState(false); // State for menu toggle
+
+  const toggleMobileMenu = () => {
+    setMenuOpen(!menuOpen); // Toggles menu visibility
+  };
+
 
 useGSAP(()=>{
   let t1 = gsap.timeline();
@@ -18,7 +25,7 @@ useGSAP(()=>{
     y : -100,
     duration : 1,
     opacity : 0,
-    stagger : 1
+    stagger : 0.5
   })
 })
 
@@ -32,21 +39,47 @@ const toggleDarkMode = () => {
   return (
     <nav className='navbar'>
       <h1>PORTFOLIO</h1>
-      <ul className='desktop'>
-      <Link to = "home" spy = {true} activeClass='active' smooth={true} duration={500}><li >Home</li></Link>
-        <Link to = "about" spy = {true} activeClass='active' smooth={true} duration={500} ><li>About</li></Link>
-        <Link to = "projects" spy = {true} activeClass='active' smooth={true} duration={500} ><li>Projects</li></Link>
-        <Link to = "contact" spy = {true} activeClass='active' smooth={true} duration={500} ><li>Contact</li></Link>
+      <ul className="desktop">
+        <Link to="home" spy={true} activeClass="active" smooth={true} duration={500}>
+          <li>Home</li>
+        </Link>
+        <Link to="about" spy={true} activeClass="active" smooth={true} duration={500}>
+          <li>About</li>
+        </Link>
+        <Link to="projects" spy={true} activeClass="active" smooth={true} duration={500}>
+          <li>Projects</li>
+        </Link>
+        <Link to="contact" spy={true} activeClass="active" smooth={true} duration={500}>
+          <li>Contact</li>
+        </Link>
         <li style={{ fontSize: "20px", cursor: "pointer" }} onClick={toggleDarkMode}>
-        {darkMode ? "☀️" : "🌙"} </li>
-     
+          {darkMode ? "☀️" : "🌙"}
+        </li>
       </ul>
 
-      <div className='hamburger'>
+      <div className='hamburger'onClick={toggleMobileMenu}>
         <div className='ham'></div>
         <div className='ham'></div>
         <div className='ham'></div>
       </div>
+
+      <ul className={`mobile ${menuOpen ? "activemobile" : ""}`}>
+        <Link to="home" spy={true} activeClass="active" smooth={true} duration={500}onClick={toggleMobileMenu}>
+          <li>Home</li>
+        </Link>
+        <Link to="about" spy={true} activeClass="active" smooth={true} duration={500} onClick={toggleMobileMenu}>
+          <li>About</li>
+        </Link>
+        <Link to="projects" spy={true} activeClass="active" smooth={true} duration={500} onClick={toggleMobileMenu}>
+          <li>Projects</li>
+        </Link>
+        <Link to="contact" spy={true} activeClass="active" smooth={true} duration={500} onClick={toggleMobileMenu}>
+          <li>Contact</li>
+        </Link>
+        <li style={{ fontSize: "20px", cursor: "pointer" }} onClick={toggleDarkMode}>
+          {darkMode ? "☀️" : "🌙"}
+        </li>
+      </ul>
 
     </nav>
       
