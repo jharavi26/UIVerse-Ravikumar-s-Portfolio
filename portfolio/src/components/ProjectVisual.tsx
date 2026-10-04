@@ -6,6 +6,7 @@ type ProjectVisualProps = {
   image?: string
 }
 
+
 export default function ProjectVisual({ kind, mark, image }: ProjectVisualProps) {
   return (
     <div className={`project-visual visual-${kind}`} aria-hidden="true">
