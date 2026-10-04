@@ -1,0 +1,20 @@
+.section-wrap {
+  padding: 68px 0;
+  border-bottom: 1px solid var(--line);
+}
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: #92959d;
+  font: 500 9px var(--mono);
+  letter-spacing: 0.11em;
+}
+.section-label > span:first-child {
+  color: var(--accent);
+}
+.section-label-line {
+  width: 24px;
+  height: 1px;
+  background: rgba(166, 162, 255, 0.56);
+}

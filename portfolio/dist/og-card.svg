@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="glow" cx="82%" cy="48%" r="55%">
+      <stop offset="0" stop-color="#554fa0" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#0c0e12" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0c0e12"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <path d="M72 81h44" stroke="#a6a2ff" stroke-width="2"/>
+  <text x="72" y="124" fill="#a6a2ff" font-family="monospace" font-size="17" letter-spacing="3">FRONTEND DEVELOPER / INDIA</text>
+  <text x="72" y="300" fill="#e9e8e3" font-family="Arial, sans-serif" font-size="91" font-weight="600" letter-spacing="-6">Ravikumar Jha<tspan fill="#a6a2ff">.</tspan></text>
+  <text x="76" y="378" fill="#c7c5d6" font-family="Georgia, serif" font-style="italic" font-size="39">Thoughtful interfaces. Built for the real world.</text>
+  <text x="76" y="540" fill="#777b84" font-family="monospace" font-size="16" letter-spacing="2">REACT · UI · PERFORMANCE</text>
+  <rect x="936" y="407" width="153" height="96" fill="#171923" stroke="#7772cd"/>
+  <text x="963" y="477" fill="#e9e8e3" font-family="Arial, sans-serif" font-size="57" font-weight="700" letter-spacing="-7">rj<tspan fill="#a6a2ff">.</tspan></text>
+</svg>

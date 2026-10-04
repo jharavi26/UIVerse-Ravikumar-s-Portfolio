@@ -1,0 +1,110 @@
+.experience-section {
+  background-image: radial-gradient(
+    ellipse at 13% 80%,
+    rgba(91, 102, 163, 0.07),
+    transparent 36%
+  );
+}
+.experience-grid {
+  display: grid;
+  grid-template-columns: 0.78fr 1.22fr;
+  gap: 9%;
+  margin-top: 41px;
+}
+.experience-heading p {
+  max-width: 290px;
+  margin: 20px 0 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.85;
+}
+.experience-card {
+  padding: 24px 27px 21px;
+  border: 1px solid var(--line);
+  background: linear-gradient(
+    140deg,
+    rgba(23, 26, 32, 0.95),
+    rgba(17, 19, 24, 0.7)
+  );
+}
+.experience-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #777b84;
+}
+.experience-top .mono {
+  font-size: 8px;
+}
+.experience-mark {
+  display: grid;
+  width: 33px;
+  height: 33px;
+  place-items: center;
+  border: 1px solid rgba(166, 162, 255, 0.25);
+  color: var(--accent-light);
+  font:
+    600 15px Georgia,
+    serif;
+}
+.experience-role {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 25px;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+}
+.experience-at {
+  color: #a7a3d9;
+  font-size: 12px;
+  font-weight: 500;
+}
+.experience-card > p {
+  max-width: 470px;
+  margin: 10px 0 18px;
+  color: #92959e;
+  font-size: 11px;
+  line-height: 1.8;
+}
+.experience-rule {
+  width: 100%;
+  height: 1px;
+  background: var(--line);
+}
+.experience-card ul {
+  display: grid;
+  gap: 12px;
+  margin: 18px 0 23px;
+  padding: 0;
+  list-style: none;
+}
+.experience-card li {
+  position: relative;
+  padding-left: 18px;
+  color: #b4b6bc;
+  font-size: 10px;
+  line-height: 1.6;
+}
+.experience-card li::before {
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  content: "→";
+}
+.experience-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  color: #7f838c;
+}
+.experience-bottom .mono {
+  font-size: 8px;
+}
+.experience-bottom svg {
+  color: var(--accent);
+}

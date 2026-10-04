@@ -1,0 +1,379 @@
+@media (min-width: 1500px) {
+  .site-shell {
+    width: min(100% - 140px, 1320px);
+  }
+  .hero {
+    min-height: 750px;
+    padding-top: 126px;
+  }
+  .hero-grid {
+    min-height: 500px;
+  }
+  .hero h1 {
+    font-size: 90px;
+  }
+}
+@media (max-width: 900px) {
+  .site-shell {
+    width: min(100% - 56px, 760px);
+  }
+  .navbar {
+    grid-template-columns: 1fr 2.8fr 1fr;
+    height: 68px;
+  }
+  .nav-links {
+    gap: clamp(12px, 2.2vw, 20px);
+  }
+  .nav-links a {
+    font-size: 10px;
+  }
+  .hero {
+    min-height: 625px;
+    padding-top: 83px;
+  }
+  .hero-grid {
+    grid-template-columns: 1.08fr 0.92fr;
+    gap: 8px;
+  }
+  .hero h1 {
+    font-size: clamp(47px, 7vw, 66px);
+  }
+  .hero-art {
+    min-height: 370px;
+    transform: scale(0.88);
+  }
+  .chip-react {
+    left: -1%;
+  }
+  .chip-css {
+    left: -3%;
+  }
+  .section-wrap {
+    padding: 54px 0;
+  }
+  .about-grid {
+    gap: 6%;
+  }
+  .about-heading h2,
+  .section-intro h2,
+  .projects-heading h2,
+  .experience-heading h2,
+  .bring-heading h2 {
+    font-size: clamp(39px, 6vw, 57px);
+  }
+  .skill-card {
+    grid-column: span 3;
+  }
+  .skill-card:nth-child(4) {
+    grid-column: 1 / span 3;
+  }
+  .skill-card:nth-child(5) {
+    grid-column: 4 / span 3;
+  }
+  .experience-grid {
+    gap: 5%;
+  }
+  .contact-grid {
+    gap: 6%;
+  }
+}
+@media (max-width: 650px) {
+  html {
+    scroll-padding-top: 68px;
+  }
+  .site-shell {
+    width: min(100% - 40px, 520px);
+  }
+  .navbar {
+    grid-template-columns: 1fr 1fr;
+    height: 64px;
+  }
+  .nav-links,
+  .nav-resume {
+    display: none;
+  }
+  .menu-toggle {
+    display: grid;
+    place-items: center;
+  }
+  .mobile-menu {
+    top: 64px;
+    max-height: calc(100dvh - 64px);
+  }
+  .hero {
+    min-height: auto;
+    padding: 74px 0 22px;
+  }
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .hero-copy {
+    z-index: 2;
+  }
+  .availability {
+    font-size: 8px;
+  }
+  .hero h1 {
+    margin: 26px 0 15px;
+    font-size: clamp(49px, 12vw, 70px);
+  }
+  .hero-headline {
+    max-width: 440px;
+    font-size: clamp(18px, 5vw, 23px);
+  }
+  .hero-description {
+    max-width: 420px;
+    font-size: 12px;
+  }
+  .hero-actions {
+    margin-top: 23px;
+  }
+  .button {
+    min-height: 45px;
+  }
+  .hero-social {
+    margin-top: 23px;
+  }
+  .social-placeholder {
+    display: none;
+  }
+  .hero-art {
+    min-height: 300px;
+    margin-top: -4px;
+    transform: scale(0.81);
+  }
+  .art-orbit {
+    width: 315px;
+    height: 315px;
+  }
+  .orbit-two {
+    width: 365px;
+    height: 365px;
+  }
+  .art-core {
+    width: 148px;
+    height: 180px;
+  }
+  .art-core > span {
+    font-size: 51px;
+  }
+  .chip-react {
+    top: 16%;
+    left: 8%;
+  }
+  .chip-ts {
+    top: 28%;
+    right: 7%;
+  }
+  .chip-css {
+    bottom: 13%;
+    left: 7%;
+  }
+  .art-caption {
+    bottom: 3%;
+    left: 6%;
+  }
+  .art-coordinates {
+    right: 6%;
+    bottom: 3%;
+  }
+  .hero-bottom {
+    gap: 12px;
+    margin-top: 14px;
+  }
+  .hero-bottom > span:last-child {
+    display: none;
+  }
+  .hero-bottom a {
+    font-size: 8px;
+  }
+  .section-wrap {
+    padding: 46px 0;
+  }
+  .section-label {
+    font-size: 8px;
+  }
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    margin-top: 33px;
+  }
+  .about-heading h2,
+  .section-intro h2,
+  .projects-heading h2,
+  .experience-heading h2,
+  .bring-heading h2 {
+    font-size: clamp(42px, 10vw, 58px);
+  }
+  .about-asterisk {
+    top: 13px;
+    right: 20%;
+  }
+  .about-body p {
+    font-size: 12px;
+  }
+  .about-body p:first-child {
+    font-size: 15px;
+  }
+  .about-footnote {
+    margin-top: 30px;
+  }
+  .section-intro,
+  .projects-heading,
+  .bring-heading {
+    display: grid;
+    gap: 12px;
+    margin: 29px 0 23px;
+  }
+  .section-intro p,
+  .projects-heading p,
+  .bring-heading p {
+    max-width: 350px;
+    margin: 0;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 9px;
+  }
+  .skill-card,
+  .skill-card:nth-child(4),
+  .skill-card:nth-child(5) {
+    grid-column: auto;
+    min-height: 175px;
+    padding: 15px 13px;
+  }
+  .skill-card:last-child {
+    grid-column: 1 / -1;
+    min-height: 150px;
+  }
+  .skill-card h3 {
+    font-size: 14px;
+  }
+  .skill-tags {
+    gap: 5px;
+  }
+  .skill-tags span {
+    padding: 4px 6px;
+    font-size: 8px;
+  }
+  .skills-note {
+    align-items: flex-start;
+    font-size: 9px;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
+    row-gap: 28px;
+  }
+  .project-visual {
+    height: clamp(220px, 61vw, 315px);
+  }
+  .project-meta .mono {
+    font-size: 7px;
+  }
+  .project-title-row h3 {
+    font-size: 20px;
+  }
+  .project-card > p {
+    font-size: 11px;
+  }
+  .project-disclaimer {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+    line-height: 1.7;
+  }
+  .experience-grid {
+    grid-template-columns: 1fr;
+    gap: 21px;
+    margin-top: 32px;
+  }
+  .experience-heading p {
+    margin-top: 13px;
+  }
+  .experience-card {
+    padding: 19px 17px 17px;
+  }
+  .experience-role {
+    font-size: 15px;
+  }
+  .experience-card > p {
+    font-size: 10px;
+  }
+  .bring-heading {
+    margin-bottom: 27px;
+  }
+  .strength-grid {
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+  .strength-card {
+    min-height: 176px;
+    padding: 17px;
+  }
+  .strength-icon {
+    margin-top: 13px;
+  }
+  .strength-card h3 {
+    margin-top: 12px;
+  }
+  .strength-card p {
+    max-width: 335px;
+  }
+  .contact-section {
+    padding-bottom: 62px;
+  }
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 27px;
+    margin-top: 32px;
+  }
+  .contact-kicker {
+    margin-bottom: 19px;
+    font-size: 7px;
+  }
+  .contact-copy h2 {
+    font-size: clamp(46px, 12vw, 62px);
+  }
+  .contact-copy > p {
+    margin: 16px 0 20px;
+    font-size: 11px;
+  }
+  .contact-form {
+    padding: 19px 16px 13px;
+  }
+  .contact-copy .social-links {
+    flex-wrap: wrap;
+  }
+  .footer-top {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .footer-top > .social-links {
+    order: 3;
+    width: 100%;
+    margin: 9px 0 0;
+  }
+  .back-top {
+    margin-left: auto;
+  }
+  .footer-bottom {
+    flex-wrap: wrap;
+    gap: 11px;
+    font-size: 7px;
+  }
+  .footer-bottom > span:nth-child(2) {
+    order: 3;
+    width: 100%;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
